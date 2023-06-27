@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <title>Gatos</title>
+  </head>
+  <body>
+    <header>
+      <h1>Gatos App</h1>
+    </header>
+    <span id="error"></span>
+    <section class="sectionUno" id="randomGatos">
+      <h2>Gatos aleatorios</h2>
+
+      <div class="contenedor">
+        <article>
+          <img id="img1" alt="Foto gatos" />
+          <button id="Btn-favoritos1">Guardar favoritos</button>
+        </article>
+
+        <article>
+          <img id="img2" alt="Foto gatos" />
+          <button id="Btn-favoritos2">Guardar favoritos</button>
+        </article>
+      </div>
+
+      <button class="btnSiguiente" ="siguiente" onclick="loadRandomGatos()">
+        Siguiente
+      </button>
+    </section>
+
+    <section class="sectionLoad">
+      <h3>Sube la foto de tu gatito</h3>
+      <form id="uploadingForm" class="form">
+        <input class="input" id="file" type="file" name="file" />
+        <button class="BtnInput" type="button" onclick="uploadGatoFoto()">
+          Subir foto de gato
+        </button>
+      </form>
+    </section>
+
+    <div class="titleFv">
+      <h4>Gatos favoritos</h4>
+    </div>
+
+    <section class="contentFavo" id="favoritos">
+      <article>
+        <img id="img2" width="150" alt="Foto gatos" />
+        <button>Sacar de favoritos</button>
+      </article>
+    </section>
+  </body>
+</html>
